@@ -1,4 +1,7 @@
 HippieStore::Application.routes.draw do
+  get "admin/index"
+
+  root :to =>'visitor#home'
   get "visitor/home"
 
   get "visitor/shops"
