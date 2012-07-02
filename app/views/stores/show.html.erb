@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @store.name %>
+</p>
+
+<p>
+  <b>Telefono 1:</b>
+  <%= @store.phone1 %>
+</p>
+
+<p>
+  <b>Telefono 2:</b>
+  <%= @store.phone2 %>
+</p>
+
+<p>
+  <b>URL Pagina Web:</b>
+  <%= @store.web %>
+</p>
+
+<p>
+  <b>Fanpage Facebook:</b>
+  <%= @store.fbook %>
+</p>
+
+<p>
+  <b>Twitter:</b>
+  <%= @store.twitter %>
+</p>
+
+<p>
+  <b>Pinterest:</b>
+  <%= @store.pinterest %>
+</p>
+
+<p>
+  <b>Dirección:</b>
+  <%= @store.address %>
+</p>
+
+<p>
+  <b>Descripción:</b>
+  <%= @store.description %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @store.tags %>
+</p>
+
+
+<%= link_to 'Editar', edit_store_path(@store) %> |
+<%= link_to 'Atras', stores_path %>

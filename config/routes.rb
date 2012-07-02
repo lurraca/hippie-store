@@ -1,4 +1,6 @@
 HippieStore::Application.routes.draw do
+  resources :stores
+
   get "admin/index"
 
   root :to =>'visitor#home'
@@ -13,7 +15,8 @@ HippieStore::Application.routes.draw do
   get "visitor/what"
 
   get "visitor/blog"
-
+  get "admin/index"
+  match 'admin' => 'admin#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
