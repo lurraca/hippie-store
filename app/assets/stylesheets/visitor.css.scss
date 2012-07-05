@@ -59,3 +59,119 @@ body{
 	margin-top:20px;
 	float:left;
 }
+
+#video-wrap{
+	width:960px;
+	height:335px;
+	margin-top:20px;
+	}
+
+#video-youtube{
+	float:left;
+}
+
+#video-title{
+	float:right;
+	font-size: 30px;
+	position: relative;
+	top: 25%;
+	text-align:right;
+	margin-right: 15px;
+}
+
+#video-date{
+	position: relative;
+	top: 28%;
+	text-align:right;
+	float:right;
+	font-size:20px;
+	margin-right: 15px;
+}
+
+#video-desc{
+	float:right;
+	width:38%;
+	text-align:right;
+	top: 31%;
+	position:relative;
+	margin-right: 15px;
+}
+
+.video-wrap{
+	width:960px;
+	height:335px;
+	margin-top:20px;
+	}
+
+.video-youtube{
+	float:left;
+}
+
+.video-title{
+	float:right;
+	font-size: 30px;
+	position: relative;
+	top: 25%;
+	text-align:right;
+	margin-right: 15px;
+}
+
+.video-date{
+	position: relative;
+	top: 28%;
+	text-align:right;
+	float:right;
+	font-size:20px;
+	margin-right: 15px;
+}
+
+.video-desc{
+	float:right;
+	width:38%;
+	text-align:right;
+	top: 31%;
+	position:relative;
+	margin-right: 15px;
+}
+
+#stores-gallery{
+	width: 645px;
+	height: 620px;
+	margin-top:15px;
+}
+
+#stores-gallery img{
+	border: 5px solid #e0e0e0;
+}
+
+#stores-gallery img:hover{
+	border: 5px solid #d8125f;
+}
+
+.store{
+	float:left;
+	margin-right:21px;
+	height: 205px;
+	text-decoration:none;
+}
+
+.store a span {
+display: none;
+
+}
+.store a:hover span {
+display: block;
+text-align:center;
+text-decoration:none;
+
+}
+
+a{
+	text-decoration:none !important;
+}
+
+.gallery-tags{
+	margin-top:5px;
+	color: #d8215f;
+	text-decoration:none;
+}

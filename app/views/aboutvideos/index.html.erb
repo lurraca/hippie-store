@@ -1,0 +1,27 @@
+<h1>Videos de Que hacemos?</h1>
+
+<table>
+  <tr>
+    <th>Url</th>
+    <th>Date</th>
+    <th>Desc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @aboutvideos.each do |aboutvideo| %>
+  <tr>
+    <td><%= aboutvideo.url %></td>
+    <td><%= aboutvideo.date %></td>
+    <td><%= aboutvideo.desc %></td>
+    <td><%= link_to 'Mostrar', aboutvideo %></td>
+    <td><%= link_to 'Editar', edit_aboutvideo_path(aboutvideo) %></td>
+    <td><%= link_to 'Eliminar', aboutvideo, confirm: 'Esta seguro?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Agregar Video', new_aboutvideo_path %>

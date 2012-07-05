@@ -50,6 +50,11 @@
   <%= @store.tags %>
 </p>
 
+<% unless @store.mainphoto == nil %>
+  <%= image_tag @store.mainphoto.url %>
+  <br />
+  <%= link_to @store.mainphoto.url, @store.mainphoto.url %>
+<% end %>
 
 <%= link_to 'Editar', edit_store_path(@store) %> |
 <%= link_to 'Atras', stores_path %>

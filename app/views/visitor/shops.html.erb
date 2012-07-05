@@ -1,2 +1,8 @@
-<h1>Visitor#shops</h1>
-<p>Find me in app/views/visitor/shops.html.erb</p>
+<div id="stores-gallery">
+  <%= div_for(@stores, :class => "") do |store| %>
+    <% unless store.mainphoto == nil %>
+      <a href="#" class="stores-gallery"><%=  image_tag(store.mainphoto.url)  %>
+      <% end %>
+      <span><div class="gallery-tags"> <%= store.tags %></div></span>
+  <% end %>
+</div>

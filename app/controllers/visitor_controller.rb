@@ -3,12 +3,14 @@ class VisitorController < ApplicationController
   end
 
   def shops
+    @stores = Store.all
   end
 
   def shop
   end
 
   def about
+    @aboutvideo = Aboutvideo.all
   end
 
   def what

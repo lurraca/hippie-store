@@ -1,4 +1,6 @@
 HippieStore::Application.routes.draw do
+  resources :aboutvideos
+
   resources :stores
 
   get "admin/index"

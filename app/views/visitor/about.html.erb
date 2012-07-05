@@ -1,2 +1,14 @@
-<h1>Visitor#about</h1>
-<p>Find me in app/views/visitor/about.html.erb</p>
+<%= div_for(@aboutvideo, :class => "video-wrap") do |video| %>
+  <div class="video-youtube">
+     <%= video.url.html_safe %>
+  </div>
+  <div class="video-title">
+    <%= video.title %>
+  </div>
+  <div class="video-date">
+    <%= video.date.strftime("%d.%m.%y ") %>
+  </div>
+  <div class="video-desc">
+    <%= video.desc %>
+  </div>
+   <% end %>

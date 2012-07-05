@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @aboutvideo.url %>
+</p>
+
+<p>
+  <b>Date:</b>
+  <%= @aboutvideo.date %>
+</p>
+
+<p>
+  <b>Descripción:</b>
+  <%= @aboutvideo.desc %>
+</p>
+
+
+<%= link_to 'Editar', edit_aboutvideo_path(@aboutvideo) %> |
+<%= link_to 'Atras', aboutvideos_path %>

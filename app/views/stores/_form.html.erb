@@ -1,6 +1,6 @@
 <br />
 
-<%= form_for(@store) do |f| %>
+<%= form_for(@store, :html => { :multipart => true }) do |f| %>
   <% if @store.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@store.errors.count, "error") %> prohibited this store from being saved:</h2>
@@ -52,6 +52,10 @@
   <div class="field">
     <%= f.label :tags, "Tags" %>
     <%= f.text_field :tags %>
+  </div>
+  <div class="field">
+    <%= f.label :mainphoto, "Imagen Principal" %>
+    <%= f.file_field :mainphoto %>
   </div>
   <div class="actions">
     <%= f.submit "Guardar" %>
