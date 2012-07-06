@@ -14,15 +14,33 @@ body{
 
 #nav {
 	border-bottom: solid black 1px;	
-	padding-bottom: 5px;
-	text-align:center;
+  width:939px;
+  margin-left:10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#nav ul{
+  margin:0;
 }
 
 #nav ul li { 
 	display: inline;
-	padding:40px 
+  color: #434343;
+	padding-right:20px;
+  margin: 0;
+  font-family: 'DistrictThinRegular';
+  font-size: 18px;
 }
 
+#nav ul li a{
+
+  color: #434343;
+}
+#nav ul li a:hover{
+
+  color: #e2857d;
+}
 #footer{
 	background: black;
 	height:190px;
@@ -47,7 +65,7 @@ body{
 	
 }
 #contact-us{
-	width:230px;
+	width:200px;
 }
 
 
@@ -59,6 +77,7 @@ body{
 .footer-col{
 	margin-top:20px;
 	float:left;
+  font-family:'DistrictThinRegular';
 }
 
 .footer-col p{
@@ -192,8 +211,22 @@ a{
 
 #social-media{
   float:right;
+  margin-right:10px;
 }
 
 #social-media img{
   margin-right: 5px;
+}
+
+
+@font-face {
+  font-family: 'DistrictThinRegular';
+  src: font-url('distth___-webfont.eot');
+  src: local('DistrictThinRegular'), font-url('distth___-webfont.eot?#iefix') format('embedded-opentype'),
+       font-url('distth___-webfont.woff') format('woff'),
+       font-url('distth___-webfont.ttf') format('truetype'),
+       font-url('distth___-webfont.svg#DistrictThinRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
 }
