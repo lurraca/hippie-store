@@ -155,7 +155,7 @@ body{
 }
 
 #stores-gallery img:hover{
-	border: 5px solid #d8125f;
+	border: 5px solid black;
 }
 
 .store{
@@ -165,11 +165,15 @@ body{
 	text-decoration:none;
 }
 
+.store span {
+display: none;
+
+}
 .store a span {
 display: none;
 
 }
-.store a:hover span {
+.store:hover span {
 display: block;
 text-align:center;
 text-decoration:none;
@@ -182,6 +186,14 @@ a{
 
 .gallery-tags{
 	margin-top:5px;
-	color: #d8215f;
+	color: black;
 	text-decoration:none;
+}
+
+#social-media{
+  float:right;
+}
+
+#social-media img{
+  margin-right: 5px;
 }

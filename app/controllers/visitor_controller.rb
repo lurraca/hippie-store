@@ -7,6 +7,7 @@ class VisitorController < ApplicationController
   end
 
   def shop
+    @store = Store.find(params[:store])
   end
 
   def about
