@@ -2,13 +2,15 @@
   <div class="video-youtube">
      <%= video.url.html_safe %>
   </div>
-  <div class="video-title">
-    <%= video.title %>
-  </div>
-  <div class="video-date">
-    <%= video.date.strftime("%d.%m.%y ") %>
-  </div>
-  <div class="video-desc">
-    <%= video.desc %>
+  <div class="video-content">
+    <div class="video-title">
+      <%= video.title %>
+    </div>
+    <div class="video-date">
+      <%= video.date.strftime("%d.%m.%y ") %>
+    </div>
+    <div class="video-desc">
+      <%= video.desc %>
+    </div>
   </div>
    <% end %>
