@@ -1,1 +1,14 @@
-<%= @store.name %>
+<div id="shop-logo">
+  <%= image_tag(@store.logo.url) %>
+</div>
+<div id="shop-tags">
+  <%= @store.tags %>
+</div>
+<div id="shop-desc">
+  <%= @store.description %>
+</div>
+<div id="shop-gallery">
+<%= div_for(@store.images, :class=>"photo-gallery") do |image| %>
+  <%= image_tag(image.photo.url) %>
+<% end %>
+</div>

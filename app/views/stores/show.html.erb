@@ -56,5 +56,15 @@
   <%= link_to @store.mainphoto.url, @store.mainphoto.url %>
 <% end %>
 
+<% unless @store.logo == nil %>
+  <%= image_tag @store.logo.url %>
+  <br />
+  <%= link_to @store.logo.url, @store.logo.url %>
+<% end %>
+
+<%= div_for(@store.images, :class => "shop-gallery") do |image| %>
+  <%= image_tag image.photo.url %>
+<% end %>
+
 <%= link_to 'Editar', edit_store_path(@store) %> |
 <%= link_to 'Atras', stores_path %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120704230451) do
+ActiveRecord::Schema.define(:version => 20120706214316) do
 
   create_table "aboutvideos", :force => true do |t|
     t.string   "url"
@@ -21,6 +21,18 @@ ActiveRecord::Schema.define(:version => 20120704230451) do
     t.datetime "updated_at", :null => false
     t.string   "title"
   end
+
+  create_table "images", :force => true do |t|
+    t.integer  "store_id"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+  end
+
+  add_index "images", ["store_id"], :name => "index_images_on_store_id"
 
   create_table "stores", :force => true do |t|
     t.string   "name"
@@ -39,6 +51,10 @@ ActiveRecord::Schema.define(:version => 20120704230451) do
     t.string   "mainphoto_content_type"
     t.integer  "mainphoto_file_size"
     t.datetime "mainphoto_updated_at"
+    t.string   "logo_file_name"
+    t.string   "logo_content_type"
+    t.integer  "logo_file_size"
+    t.datetime "logo_updated_at"
   end
 
 end

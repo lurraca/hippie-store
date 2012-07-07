@@ -57,6 +57,16 @@
     <%= f.label :mainphoto, "Imagen Principal" %>
     <%= f.file_field :mainphoto %>
   </div>
+  <div class="field">
+    <%= f.label :logo, "Logo" %>
+    <%= f.file_field :logo %>
+  </div>
+  <%= f.fields_for :images do |builder| %>
+    <div class="field">
+      <%= builder.label :photo, "Imagen" %>
+      <%= builder.file_field :photo %>
+    </div>
+  <% end %>
   <div class="actions">
     <%= f.submit "Guardar" %>
   </div>

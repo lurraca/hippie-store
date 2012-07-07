@@ -14,6 +14,7 @@ body{
 
 #nav {
 	border-bottom: solid black 1px;	
+  margin-bottom: 10px;
   width:939px;
   margin-left:10px;
   padding-bottom: 10px;
@@ -43,7 +44,9 @@ body{
 }
 #footer{
 	background: black;
+  float:left;
 	height:190px;
+  width:100%;
 }
 #footer-content{
 	margin:0 auto;
@@ -191,6 +194,47 @@ a{
   margin-right:10px;
 }
 
+#shop-logo{
+}
+#shop-logo img{
+  width: 595px;
+  height: 165px;
+  border: black 5px solid;
+}
+
+#shop-tags{
+  font-size:14px;
+  margin: 5px 0 5px 0;
+  font-family: 'Rockwell';
+}
+
+#shop-desc{
+  font-family:'TitilliumText15L400wt';
+  color:#575757;
+}
+
+#shop-gallery{
+  width:638px;
+  height:380px;
+}
+.photo-gallery{
+  float:left;
+}
+
+#what-picture{
+  width:50%;
+  float:left;
+}
+#what-text{
+  width: 48%;
+  float: right;
+  margin-right: 10px;
+  text-align: right;
+}
+#what-text p{
+  font-size:14px;
+  font-family: 'TitilliumText15L400wt';
+}
 #social-media img{
   margin-right: 5px;
 }
