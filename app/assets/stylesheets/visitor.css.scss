@@ -214,7 +214,8 @@ a{
   margin-right:10px;
 }
 
-#shop-logo{
+#shop-wrapper{
+  margin-left:10px;
 }
 #shop-logo img{
   width: 595px;
@@ -230,6 +231,7 @@ a{
 
 #shop-desc{
   font-family:'TitilliumText15L400wt';
+  width:600px;
   color:#575757;
 }
 
@@ -239,6 +241,8 @@ a{
 }
 .photo-gallery{
   float:left;
+  margin-right:15px;
+  border: 5px black solid;
 }
 
 #what-picture{

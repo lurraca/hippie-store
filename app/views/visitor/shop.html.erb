@@ -1,3 +1,4 @@
+<div id="shop-wrapper">
 <div id="shop-logo">
   <%= image_tag(@store.logo.url) %>
 </div>
@@ -11,4 +12,5 @@
 <%= div_for(@store.images, :class=>"photo-gallery") do |image| %>
   <%= image_tag(image.photo.url) %>
 <% end %>
+</div>
 </div>

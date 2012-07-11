@@ -1,8 +1,11 @@
+<div id="shop-wrapper">
 <div id="stores-gallery">
+
   <%= div_for(@stores, :class => "") do |store| %>
     <% unless store.mainphoto == nil %>
       <a href="<%=store%>" class="stores-gallery"><%= link_to image_tag(store.mainphoto.url), { :controller => 'visitor', :action => 'shop', :store => store.id}, :class=>"stores-gallery"  %>
       <% end %>
       <span><div class="gallery-tags"> <%= store.tags %></div></span>
   <% end %>
+</div>
 </div>
