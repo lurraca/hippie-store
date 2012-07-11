@@ -1,5 +1,7 @@
 class VisitorController < ApplicationController
   def home
+    @search = Store.search(params[:search])
+    @Stores = @search.all
   end
 
   def shops

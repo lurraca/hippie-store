@@ -14,6 +14,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
   gem "paperclip", "~> 3.0"
+  gem "meta_search", :git => "git://github.com/ernie/meta_search.git"
   gem 'aws-sdk'
   gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
   gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'

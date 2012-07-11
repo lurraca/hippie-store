@@ -8,3 +8,9 @@
     <li>Blog</li>
 	</ul>
 </div>
+<div id="search">
+  <%= form_for @search do |f| %>
+    <%= f.text_field :name_contains %>
+    <%= f.submit "Search!", :name=>"search" %>
+  <% end %>
+</div>
