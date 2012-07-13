@@ -37,19 +37,20 @@ textarea, input:focus {
 outline: none; }
 
 #search{
-  float: left;
-  width:300px;
-  margin-left: 24px;
+  float: right;
+  width:283px;
+  margin-right: 10px;
   margin-top:6px;
   height: 40px;
 }
  #name_contains{
- width: 197px;
+ width: 192px;
  margin-top: 14px;
- font-size: 10px;
+ font-size: 12px;
  font-style: italic;
  font-family: 'DistrictThinRegular';
  height: 16px;
+ padding-left:5px;
  border: 1px solid black;
  }
  input[name=search]{
@@ -135,7 +136,6 @@ outline: none; }
 
 .video-wrap{
 	width:950px;
-	height:235px;
 	margin-top:20px;
   margin-left:10px;
 	}
@@ -147,7 +147,6 @@ outline: none; }
 
 .video-content{
   width:445px;
-  height:235px;
   float:left;
 }
 .video-title{
@@ -181,10 +180,11 @@ outline: none; }
 }
 
 #stores-gallery{
-	width: 645px;
+	width: 628px;
 	height: 620px;
 	margin-top:15px;
   margin-left: 10px;
+  float:left;
 }
 
 #stores-gallery img{
@@ -235,6 +235,7 @@ a{
 }
 
 #shop-wrapper{
+  float:left;
   margin-left:10px;
 }
 #shop-logo img{
@@ -242,7 +243,9 @@ a{
   height: 165px;
   border: black 5px solid;
 }
-
+#tall-ads{
+  float:left;
+}
 #shop-tags{
   font-size:14px;
   margin: 5px 0 5px 0;
@@ -327,4 +330,25 @@ a{
     font-weight: normal;
     font-style: normal;
 
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+ 
+.clearfix {
+  display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+  display: block;
+}
+ 
+* html .clearfix {
+  height: 1%;
 }
