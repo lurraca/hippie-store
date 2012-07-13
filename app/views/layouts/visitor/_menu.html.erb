@@ -10,9 +10,9 @@
 	</ul>
 </div>
 <div id="search">
-  <%= form_for @search do |f| %>
-    <%= f.text_field :name_contains %>
-    <%= f.submit "Search!", :name=>"search" %>
+  <%= form_tag('/search', :method => 'POST') do %>
+    <%= text_field_tag :name_contains %>
+    <%= submit_tag "Search!", :name=>"search" %>
   <% end %>
 </div>
 </div>

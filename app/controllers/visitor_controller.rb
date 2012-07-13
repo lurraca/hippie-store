@@ -23,6 +23,7 @@ class VisitorController < ApplicationController
     @search = Store.search(params[:search])
   end
 
-  def blog
+  def search
+    
   end
 end

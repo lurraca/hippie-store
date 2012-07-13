@@ -4,7 +4,7 @@ HippieStore::Application.routes.draw do
   resources :stores
 
   get "admin/index"
-
+  post 'search/' => 'visitor#search' 
   root :to =>'visitor#home'
   get "visitor/home"
 

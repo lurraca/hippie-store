@@ -69,7 +69,7 @@ outline: none; }
 #nav ul li { 
 	display: inline;
   color: #434343;
-	padding-right:48px;
+	padding-right:26px;
   margin: 0;
   font-family: 'SuperGroteskCCdMedLFRegular', Arial;
   font-size: 14px;
