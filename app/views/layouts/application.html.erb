@@ -2,9 +2,15 @@
 <html>
 <head>
   <title><%=h yield(:title) %></title>
+  <% if controller_name == "visitor" %>
+  <%= stylesheet_link_tag    "visitor", :media => "all" %>
+  <%= javascript_include_tag "visitor" %>
+  <%= csrf_meta_tags %>
+<% else %>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+<% end  %>
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
