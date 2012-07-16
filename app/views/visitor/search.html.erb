@@ -1,0 +1,12 @@
+<div id="resultados">
+  <h1>Resultados de su busqueda: </h1>
+</div>
+<% @stores.each_with_index do |store,index| %>
+  <div id="storer<%= index %>" class="storer">
+    <div class="storer-img"><%= image_tag store.mainphoto.url %></div>
+    <div class="storer-name"><%= link_to store.name, :controller => 'visitor', :action => 'shop', :store => store.id %></div>
+    <div class="storer-desc"><%= store.description %></div>
+  </div>
+
+<% end %>
+<% content_for :title, "The Hippie Market - Search Results" %>

@@ -14,4 +14,13 @@ class Store < ActiveRecord::Base
                      :url  => '/logo/:basename.:extension',
                      :path => 'logo/:basename.:extension',
                      :bucket => 'hippie-gallery'
+
+
+   def self.search(search)
+     if search
+       where 'name LIKE ?', "%#{search}%"
+       else
+         scoped
+       end
+   end
 end

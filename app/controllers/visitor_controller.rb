@@ -1,7 +1,6 @@
 class VisitorController < ApplicationController
   def home
-    @search = Store.search(params[:search])
-    @Stores = @search.all
+    @stores = Store.search(params[:search])
   end
 
   def shops
@@ -23,7 +22,8 @@ class VisitorController < ApplicationController
     @search = Store.search(params[:search])
   end
 
-  def search
-    
+  def search 
+    @search = Store.search(params[:name_contains])
+    @stores = @search.all
   end
 end
