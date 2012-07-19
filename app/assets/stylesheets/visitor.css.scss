@@ -176,46 +176,42 @@ outline: none; }
 
 .video-wrap{
 	width:950px;
+  height:235px;
 	margin-top:20px;
   margin-left:10px;
 	}
 
 .video-youtube{
 	float:left;
+  height:100%;
   margin-left: 75px;
 }
 
 .video-content{
   width:445px;
+  margin-top:30px;
   float:left;
 }
 .video-title{
 	float:right;
   font-family:'Rockwell';
+  width:100%;
 	font-size: 30px;
-	position: relative;
-	top: 15%;
 	text-align:right;
 	margin-right: 15px;
 }
 
 .video-date{
 	position: relative;
-	top: 28%;
-  font-family:'Rockwell';
 	text-align:right;
-  left:67%;
 	font-size:20px;
 	margin-right: 15px;
 }
 
 .video-desc{
 	float:right;
-	width:68%;
 	text-align:right;
   font-family: 'TitilliumText15L400wt';
-	top: 31%;
-	position:relative;
 	margin-right: 15px;
 }
 
