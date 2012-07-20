@@ -14,6 +14,8 @@ HippieStore::Application.routes.draw do
 
   get "visitor/about"
 
+  get "visitor/contactus"
+
   get "visitor/what"
 
   get "visitor/blog"

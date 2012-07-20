@@ -1,3 +1,8 @@
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox").fancybox();
+  });
+</script>
 <div id="shop-wrapper">
 <div id="shop-logo">
   <%= image_tag(@store.logo.url) %>
@@ -10,7 +15,7 @@
 </div>
 <div id="shop-gallery">
 <%= div_for(@store.images, :class=>"photo-gallery") do |image| %>
-  <%= image_tag(image.photo.url) %>
+  <a class="fancybox" rel="group" href="<%= image.photo.url %>"><%= image_tag(image.photo.url, :size=>'124x135') %></a>
 <% end %>
 </div>
 </div>

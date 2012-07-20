@@ -26,4 +26,7 @@ class VisitorController < ApplicationController
     @search = Store.search(params[:name_contains])
     @stores = @search.all
   end
+
+  def contactus
+  end
 end
