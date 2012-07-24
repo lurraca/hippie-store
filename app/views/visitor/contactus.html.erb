@@ -1,29 +1,29 @@
-<div>
+<div id="contact-wrapper">
+<div id="contact">
   <h1>We would love to hear from you</h1>
 
-  <%= form_for @message  do |form| %>
+  <%= form_tag @message do |form| %>
     <fieldset class="fields">
       <div class="field">
-        <%= form.label :name %>
-        <%= form.text_field :name %>
+        <%= label_tag :name %>
+        <%= text_field_tag :name, nil,:class=>"contact-text" %>
       </div>
 
       <div class="field">
-        <%= form.label :email %>
-        <%= form.text_field :email %>
+        <%= label_tag :email %>
+        <%= text_field_tag :email,nil, :class=>"contact-text" %>
       </div>
       <div class="field">
-        <%= form.label :subject %>
-        <%= form.text_field :subject %>
+        <%= label_tag :subject %>
+        <%= text_field_tag :subject, nil, :class=>"contact-text" %>
       </div>
 
       <div class="field">
-        <%= form.label :body %>
-        <%= form.text_area :body %>
+      <%= text_area_tag :body, "Message", :class=>"contact-area", :onfocus=>"if(this.value== 'Message') this.value = '';", :onblur=>"if(this.value=='') this.value='Message'" %>
       </div>
     </fieldset>
 
     <fieldset class="actions">
-      <%= form.submit "Send" %>
+      <%= submit_tag "Send", :class=>"contact-send" %>
     </fieldset>
-  <% end %></div>
+  <% end %></div></div>

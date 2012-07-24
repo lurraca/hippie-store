@@ -152,7 +152,73 @@ outline: none; }
 	width:200px;
 }
 
+#contact-wrapper{
+width:960px;
+}
+#contact{
+  margin:0 auto;
+  width:470px;
+}
+#contact h1{
+  font-family: 'Rockwell';
+  float:left;
+}
 
+.fields{
+  border:0;
+}
+.field{
+  padding: 10px;
+}
+label{
+  text-align:right;
+  font-family: 'TitilliumText15L400wt';
+}
+.contact-text{
+  margin:20px;
+  padding: 8px;
+  border: solid 1px #E5E5E5;
+  width:200px;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/* Default property recognized by some browsers- a Good practice to include it*/
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*For Mozilla Firefox Browsers*/
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*For Webkite browsers - Chrome and Safari*/
+  background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));/*Chrome and Safari*/
+   background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);/* Firefox Browsers */
+   background: #FFFFFF url('bg_form.png') left top repeat-x;
+   -moz-border-radius:12px 12px 12px 12px;
+ -webkit-border-radius: 12px 12px 12px 12px;
+ font-style: italic;
+ font-family: 'DistrictThinRegular';
+}
+.contact-area{
+  border: solid 1px #E5E5E5;
+  font-style: italic;
+  font-family: 'DistrictThinRegular';
+  padding: 8px;
+  height: 200px;
+  width: 440px;
+  box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/* Default property recognized by some browsers- a Good practice to include it*/
+  -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*For Mozilla Firefox Browsers*/
+  -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;/*For Webkite browsers - Chrome and Safari*/
+  background: -webkit-gradient(linear, left top, left 25, from(#FFFFFF), color-stop(4%, #EEEEEE), to(#FFFFFF));/*Chrome and Safari*/
+   background: -moz-linear-gradient(top, #FFFFFF, #EEEEEE 1px, #FFFFFF 25px);/* Firefox Browsers */
+   background: #FFFFFF url('bg_form.png') left top repeat-x;
+   -moz-border-radius:12px 12px 12px 12px;
+ -webkit-border-radius: 12px 12px 12px 12px;
+}
+.contact-send{
+  border:0;
+  color:white;
+  width:70px;
+  height:25px;
+ background:black;
+}
+.actions{
+  border:0;
+  margin-right:10px;
+  float:right;
+  margin-bottom:20px;
+}
 #quick-links{
 	width:220px;
 }

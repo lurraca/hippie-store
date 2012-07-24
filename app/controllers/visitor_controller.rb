@@ -28,5 +28,6 @@ class VisitorController < ApplicationController
   end
 
   def contactus
+    @message
   end
 end
